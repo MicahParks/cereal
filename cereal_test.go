@@ -10,9 +10,6 @@ var (
 
 	// alphabet is a slice of runes that holds all lowercase letters.
 	alphabet = []rune("abcdefghijklmnopqrstuvwxyz")
-
-	// numbers is a alice of runes that holds all numbers.
-	numbers = []rune("0123456789")
 )
 
 // BenchmarkGenerator benchmarks the cereal generator implementation.
