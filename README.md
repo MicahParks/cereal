@@ -1,4 +1,5 @@
 # cereal
+[![Go Reference](https://pkg.go.dev/badge/github.com/MicahParks/cereal.svg)](https://pkg.go.dev/github.com/MicahParks/cereal) [![Go Report Card](https://goreportcard.com/badge/github.com/MicahParks/cereal)](https://goreportcard.com/report/github.com/MicahParks/cereal)
 
 Package `cereal` provides a generator of unique strings based on an alphabet in sequential order. When a cycle of
 the alphabet is complete, a new character is appended, and the cycle restarts.

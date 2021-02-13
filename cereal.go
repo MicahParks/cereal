@@ -1,4 +1,4 @@
-// Package `cereal` provides a generator of unique strings based on an alphabet in sequential order. When a cycle of
+// Package cereal provides a generator of unique strings based on an alphabet in sequential order. When a cycle of
 // the alphabet is complete, a new character is appended, and the cycle restarts.
 //
 // This is the first 21 strings returned from the generator when the alphabet `0123456789` is used.
