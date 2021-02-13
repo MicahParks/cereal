@@ -13,7 +13,7 @@ var (
 func main() {
 
 	// Create a cereal generator.
-	gen := cereal.Generator(numbers)
+	gen, _ := cereal.Generator(numbers, "")
 
 	// Print the next cereal in the generator forever.
 	for i := 0; i < 100; i++ {
