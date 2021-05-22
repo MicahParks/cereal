@@ -78,11 +78,11 @@ func (c *cereal) increment() (completedCycle bool) {
 		if c.parent != nil {
 			completedCycle = c.parent.increment()
 		} else {
-			completedCycle = true
+			return true
 		}
 	}
 
-	return completedCycle
+	return false
 }
 
 // next generates the next return string for the cereal. It will return the newest cereal to call next() on later.

@@ -13,10 +13,14 @@ var (
 )
 
 // BenchmarkGenerator benchmarks the cereal generator implementation.
-func BenchmarkGenerator(_ *testing.B) {
+func BenchmarkGenerator(b *testing.B) {
 
 	// Create the cereal generator.
-	gen := cereal.Generator(alphabet)
+	gen, err := cereal.Generator(alphabet, "")
+	if err != nil {
+		b.Errorf("Failed to creat cereal generator.\nError: %s\n", err.Error())
+		b.FailNow()
+	}
 
 	// The number of cereal generations to take place.
 	iterations := 1000000
